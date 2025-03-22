@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipesListView: View {
     @StateObject var viewModel = RecipesListViewModel()
-    
+
     var body: some View {
         VStack {
             Image(systemName: "globe")

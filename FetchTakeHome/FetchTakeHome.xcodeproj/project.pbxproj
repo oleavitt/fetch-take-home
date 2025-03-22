@@ -143,6 +143,7 @@
 				8CE07C1E2D8E8175002950DC /* Sources */,
 				8CE07C1F2D8E8175002950DC /* Frameworks */,
 				8CE07C202D8E8175002950DC /* Resources */,
+				8CE07C562D8E88E3002950DC /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -162,6 +163,7 @@
 				8CE07C462D8E8556002950DC /* Sources */,
 				8CE07C472D8E8556002950DC /* Frameworks */,
 				8CE07C482D8E8556002950DC /* Resources */,
+				8CE07C532D8E87D2002950DC /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -236,6 +238,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CE07C532D8E87D2002950DC /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nfi\n\n";
+		};
+		8CE07C562D8E88E3002950DC /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CE07C1E2D8E8175002950DC /* Sources */ = {
@@ -406,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Preview Content\"";
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -437,6 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FetchTakeHome/Preview Content\"";
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OleavittApps.FetchTakeHomeTests;
@@ -483,6 +529,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OleavittApps.FetchTakeHomeTests;
