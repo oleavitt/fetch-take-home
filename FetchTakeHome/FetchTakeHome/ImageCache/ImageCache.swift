@@ -26,7 +26,7 @@ class ImageCache: ObservableObject {
             state = .empty
             return
         }
-        
+
         guard let url = URL(string: urlString) else {
             state = .error(URLError(.badURL))
 #if DEBUG

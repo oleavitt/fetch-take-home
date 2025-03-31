@@ -5,7 +5,7 @@
 //  Created by Oren Leavitt on 3/30/25.
 //
 
-import Foundation
+import SwiftUI
 
 /// Represents a single recipe in the list of recipes returned in the API response
 struct Recipe: Decodable, Sendable {
@@ -26,6 +26,10 @@ struct Recipe: Decodable, Sendable {
         case photoUrlSmall = "photo_url_small"
         case sourceUrl = "source_url"
         case youTubeUrl = "youtube_url"
+    }
+
+    var a11yDescription: String {
+        String(localized: "\(name), cuisine: \(cuisine)")
     }
 
 #if DEBUG

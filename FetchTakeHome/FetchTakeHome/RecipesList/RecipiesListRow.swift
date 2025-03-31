@@ -29,6 +29,8 @@ struct RecipiesListRow: View {
         .frame(maxWidth: .infinity)
         .background { Color("card-background") }
         .cornerRadius(10)
+        .accessibilityElement()
+        .accessibilityLabel(recipe.a11yDescription)
     }
 
     var placeHolderImage: some View {
