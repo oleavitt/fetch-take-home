@@ -13,6 +13,10 @@
 		8C2731E32D99FAB100464FD3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E22D99FAB100464FD3 /* Endpoint.swift */; };
 		8C2731E52D9A07D000464FD3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731E42D9A07D000464FD3 /* Localizable.xcstrings */; };
 		8C2731E72D9A0FAE00464FD3 /* NetworkLayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E62D9A0FAE00464FD3 /* NetworkLayerMock.swift */; };
+		8C2731EC2D9A2BF900464FD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731EB2D9A2BF900464FD3 /* README.md */; };
+		8C2731ED2D9A2BFA00464FD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731EB2D9A2BF900464FD3 /* README.md */; };
+		8C2731EF2D9A381900464FD3 /* RecipiesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */; };
+		8C2731F12D9A397000464FD3 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */; };
 		8C282C652D985EFC00D3E73C /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C282C642D985EFC00D3E73C /* NetworkLayer.swift */; };
 		8C282C672D985FEB00D3E73C /* NetworkLayerLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C282C662D985FEB00D3E73C /* NetworkLayerLive.swift */; };
 		8CE07C392D8E82B9002950DC /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE07C362D8E82B9002950DC /* RecipesListView.swift */; };
@@ -39,6 +43,9 @@
 		8C2731E22D99FAB100464FD3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		8C2731E42D9A07D000464FD3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8C2731E62D9A0FAE00464FD3 /* NetworkLayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerMock.swift; sourceTree = "<group>"; };
+		8C2731EB2D9A2BF900464FD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
+		8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesListRow.swift; sourceTree = "<group>"; };
+		8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 		8C282C642D985EFC00D3E73C /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		8C282C662D985FEB00D3E73C /* NetworkLayerLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerLive.swift; sourceTree = "<group>"; };
 		8CE07C222D8E8175002950DC /* FetchTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +86,7 @@
 		8CE07C192D8E8175002950DC = {
 			isa = PBXGroup;
 			children = (
+				8C2731EB2D9A2BF900464FD3 /* README.md */,
 				8CE07C382D8E82B9002950DC /* FetchTakeHome */,
 				8CE07C4B2D8E8556002950DC /* FetchTakeHomeTests */,
 				8CE07C232D8E8175002950DC /* Products */,
@@ -119,9 +127,11 @@
 		8CE07C3D2D8E82C0002950DC /* RecipesList */ = {
 			isa = PBXGroup;
 			children = (
+				8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */,
 				8CE07C362D8E82B9002950DC /* RecipesListView.swift */,
 				8CE07C3E2D8E833C002950DC /* RecipesListViewModel.swift */,
 				8C2731E02D99F97C00464FD3 /* RecipedListState.swift */,
+				8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */,
 			);
 			path = RecipesList;
 			sourceTree = "<group>";
@@ -247,6 +257,7 @@
 			files = (
 				8CE07C3B2D8E82B9002950DC /* Preview Assets.xcassets in Resources */,
 				8CE07C3C2D8E82B9002950DC /* Assets.xcassets in Resources */,
+				8C2731ED2D9A2BFA00464FD3 /* README.md in Resources */,
 				8C2731E52D9A07D000464FD3 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2731EC2D9A2BF900464FD3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +322,13 @@
 				8C282C672D985FEB00D3E73C /* NetworkLayerLive.swift in Sources */,
 				8C2731E72D9A0FAE00464FD3 /* NetworkLayerMock.swift in Sources */,
 				8C2731E12D99F97C00464FD3 /* RecipedListState.swift in Sources */,
+				8C2731EF2D9A381900464FD3 /* RecipiesListRow.swift in Sources */,
 				8C2731DF2D99E64000464FD3 /* Recipes.swift in Sources */,
 				8CE07C392D8E82B9002950DC /* RecipesListView.swift in Sources */,
 				8C2731DD2D99E5B100464FD3 /* Recipe.swift in Sources */,
 				8CE07C3A2D8E82B9002950DC /* FetchTakeHomeApp.swift in Sources */,
 				8C2731E32D99FAB100464FD3 /* Endpoint.swift in Sources */,
+				8C2731F12D9A397000464FD3 /* CachedAsyncImage.swift in Sources */,
 				8CE07C3F2D8E833C002950DC /* RecipesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +545,7 @@
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OleavittApps.FetchTakeHomeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +565,7 @@
 				DEVELOPMENT_TEAM = 2W2GK9ZGZC;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.OleavittApps.FetchTakeHomeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -29,6 +29,7 @@ struct RecipesListView: View {
             .task {
                 await viewModel.fetchRecipes()
             }
+            .background { Color("list-background") }
         }
     }
 
@@ -36,8 +37,7 @@ struct RecipesListView: View {
         VStack {
             ScrollView {
                 ForEach(viewModel.recipes, id: \.self) { recipe in
-                    Text(recipe.name)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    RecipiesListRow(recipe: recipe)
                 }
             }
         }

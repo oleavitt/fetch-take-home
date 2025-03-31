@@ -27,6 +27,17 @@ struct Recipe: Decodable, Sendable {
         case sourceUrl = "source_url"
         case youTubeUrl = "youtube_url"
     }
+
+#if DEBUG
+    static let sample = Recipe(
+        uuid: UUID(),
+        cuisine: "TexMex",
+        name: "Chimichanga",
+        photoUrlLarge: nil,
+        photoUrlSmall: nil,
+        sourceUrl: nil,
+        youTubeUrl: nil)
+#endif
 }
 
 /// Hashable id for List view
