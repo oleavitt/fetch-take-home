@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		8C2731DD2D99E5B100464FD3 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731DC2D99E5B100464FD3 /* Recipe.swift */; };
 		8C2731DF2D99E64000464FD3 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731DE2D99E64000464FD3 /* Recipes.swift */; };
-		8C2731E12D99F97C00464FD3 /* RecipedListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E02D99F97C00464FD3 /* RecipedListState.swift */; };
+		8C2731E12D99F97C00464FD3 /* RecipesListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E02D99F97C00464FD3 /* RecipesListState.swift */; };
 		8C2731E32D99FAB100464FD3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E22D99FAB100464FD3 /* Endpoint.swift */; };
 		8C2731E52D9A07D000464FD3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731E42D9A07D000464FD3 /* Localizable.xcstrings */; };
 		8C2731E72D9A0FAE00464FD3 /* NetworkLayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731E62D9A0FAE00464FD3 /* NetworkLayerMock.swift */; };
 		8C2731EC2D9A2BF900464FD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731EB2D9A2BF900464FD3 /* README.md */; };
 		8C2731ED2D9A2BFA00464FD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C2731EB2D9A2BF900464FD3 /* README.md */; };
 		8C2731EF2D9A381900464FD3 /* RecipiesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */; };
-		8C2731F12D9A397000464FD3 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */; };
+		8C2732072D9A468200464FD3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2732062D9A468200464FD3 /* ImageCache.swift */; };
+		8C2732092D9A49C200464FD3 /* ImageLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2732082D9A49C200464FD3 /* ImageLoadingState.swift */; };
+		8C27320B2D9A554E00464FD3 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C27320A2D9A554E00464FD3 /* CachedImageView.swift */; };
 		8C282C652D985EFC00D3E73C /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C282C642D985EFC00D3E73C /* NetworkLayer.swift */; };
 		8C282C672D985FEB00D3E73C /* NetworkLayerLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C282C662D985FEB00D3E73C /* NetworkLayerLive.swift */; };
 		8CE07C392D8E82B9002950DC /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE07C362D8E82B9002950DC /* RecipesListView.swift */; };
@@ -39,13 +41,15 @@
 /* Begin PBXFileReference section */
 		8C2731DC2D99E5B100464FD3 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		8C2731DE2D99E64000464FD3 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
-		8C2731E02D99F97C00464FD3 /* RecipedListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipedListState.swift; sourceTree = "<group>"; };
+		8C2731E02D99F97C00464FD3 /* RecipesListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListState.swift; sourceTree = "<group>"; };
 		8C2731E22D99FAB100464FD3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		8C2731E42D9A07D000464FD3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8C2731E62D9A0FAE00464FD3 /* NetworkLayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerMock.swift; sourceTree = "<group>"; };
 		8C2731EB2D9A2BF900464FD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
 		8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesListRow.swift; sourceTree = "<group>"; };
-		8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
+		8C2732062D9A468200464FD3 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8C2732082D9A49C200464FD3 /* ImageLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingState.swift; sourceTree = "<group>"; };
+		8C27320A2D9A554E00464FD3 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		8C282C642D985EFC00D3E73C /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		8C282C662D985FEB00D3E73C /* NetworkLayerLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerLive.swift; sourceTree = "<group>"; };
 		8CE07C222D8E8175002950DC /* FetchTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C2732052D9A466600464FD3 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				8C2732062D9A468200464FD3 /* ImageCache.swift */,
+				8C2732082D9A49C200464FD3 /* ImageLoadingState.swift */,
+				8C27320A2D9A554E00464FD3 /* CachedImageView.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
 		8CE07C192D8E8175002950DC = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +127,7 @@
 		8CE07C382D8E82B9002950DC /* FetchTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				8C2732052D9A466600464FD3 /* ImageCache */,
 				8CE07C3D2D8E82C0002950DC /* RecipesList */,
 				8CE07C422D8E8465002950DC /* RecipesData */,
 				8CE07C402D8E841D002950DC /* Networking */,
@@ -127,10 +142,9 @@
 		8CE07C3D2D8E82C0002950DC /* RecipesList */ = {
 			isa = PBXGroup;
 			children = (
-				8C2731F02D9A397000464FD3 /* CachedAsyncImage.swift */,
 				8CE07C362D8E82B9002950DC /* RecipesListView.swift */,
 				8CE07C3E2D8E833C002950DC /* RecipesListViewModel.swift */,
-				8C2731E02D99F97C00464FD3 /* RecipedListState.swift */,
+				8C2731E02D99F97C00464FD3 /* RecipesListState.swift */,
 				8C2731EE2D9A381900464FD3 /* RecipiesListRow.swift */,
 			);
 			path = RecipesList;
@@ -319,16 +333,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C282C652D985EFC00D3E73C /* NetworkLayer.swift in Sources */,
+				8C2732072D9A468200464FD3 /* ImageCache.swift in Sources */,
 				8C282C672D985FEB00D3E73C /* NetworkLayerLive.swift in Sources */,
 				8C2731E72D9A0FAE00464FD3 /* NetworkLayerMock.swift in Sources */,
-				8C2731E12D99F97C00464FD3 /* RecipedListState.swift in Sources */,
+				8C2731E12D99F97C00464FD3 /* RecipesListState.swift in Sources */,
 				8C2731EF2D9A381900464FD3 /* RecipiesListRow.swift in Sources */,
 				8C2731DF2D99E64000464FD3 /* Recipes.swift in Sources */,
+				8C27320B2D9A554E00464FD3 /* CachedImageView.swift in Sources */,
 				8CE07C392D8E82B9002950DC /* RecipesListView.swift in Sources */,
+				8C2732092D9A49C200464FD3 /* ImageLoadingState.swift in Sources */,
 				8C2731DD2D99E5B100464FD3 /* Recipe.swift in Sources */,
 				8CE07C3A2D8E82B9002950DC /* FetchTakeHomeApp.swift in Sources */,
 				8C2731E32D99FAB100464FD3 /* Endpoint.swift in Sources */,
-				8C2731F12D9A397000464FD3 /* CachedAsyncImage.swift in Sources */,
 				8CE07C3F2D8E833C002950DC /* RecipesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,21 +12,9 @@ struct RecipiesListRow: View {
 
     var body: some View {
         HStack {
-            CachedAsyncImage(url: URL(string: recipe.photoUrlSmall ?? "")) { phase in
-                switch phase {
-                case .success(let image):
-                    image
-                        .resizable()
-                case .failure:
-                    errorImage
-                case .empty:
-                    placeHolderImage
-                @unknown default:
-                    placeHolderImage
-                }
-            }
-            .frame(width: 48, height: 48)
-            .cornerRadius(5)
+            CachedImageView(urlString: recipe.photoUrlSmall)
+                .frame(width: 48, height: 48)
+                .cornerRadius(5)
             VStack {
                 Text(recipe.name)
                     .font(.title)
@@ -67,11 +55,12 @@ struct RecipiesListRow: View {
 }
 
 #Preview {
-    VStack {
-        RecipiesListRow(recipe: Recipe.sample)
-        RecipiesListRow(recipe: Recipe.sample)
-        Spacer()
+    ScrollView {
+        LazyVStack {
+            RecipiesListRow(recipe: Recipe.sample)
+            RecipiesListRow(recipe: Recipe.sample)
+        }
     }
     .padding()
-    .background { Color("list-background") }
+    .background(Color("list-background"))
 }

@@ -24,18 +24,18 @@ struct RecipesListView: View {
                     recipesView
                 }
             }
-            .padding()
+            .padding(.horizontal)
+            .background(Color("list-background"))
             .navigationTitle("recipes")
             .task {
                 await viewModel.fetchRecipes()
             }
-            .background { Color("list-background") }
         }
     }
 
     private var recipesView: some View {
-        VStack {
-            ScrollView {
+        ScrollView {
+            LazyVStack {
                 ForEach(viewModel.recipes, id: \.self) { recipe in
                     RecipiesListRow(recipe: recipe)
                         .scrollTransition { content, phase in
@@ -48,7 +48,6 @@ struct RecipesListView: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     private var emptyView: some View {

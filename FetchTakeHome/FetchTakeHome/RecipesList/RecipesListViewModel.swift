@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 class RecipesListViewModel: ObservableObject {
-    @Published var state: RecipedListState = .empty
+    @Published var state: RecipesListState = .empty
 
     var fetchRecipesEndpoint: Endpoint = .recipes
 

@@ -14,8 +14,13 @@ actor NetworkLayerLive: NetworkLayer {
     ///   - type: The object type to decode as
     /// - Returns: The decoded object if successful. Errors will be thrown if network request or decode fail.
     func fetchJsonData<T: DecodableSendable>(request: URLRequest, type: T.Type) async throws -> T {
-        let response = try await URLSession.shared.data(for: request)
-        let data = response.0
+        let (data, response) = try await URLSession.shared.data(for: request)
+
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode)
+        else {
+            throw URLError(.badServerResponse)
+        }
 
 #if DEBUG
         // Dump the response JSON data to the Console, using JSONSerialization's pretty printed option.
