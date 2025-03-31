@@ -38,6 +38,13 @@ struct RecipesListView: View {
             ScrollView {
                 ForEach(viewModel.recipes, id: \.self) { recipe in
                     RecipiesListRow(recipe: recipe)
+                        .scrollTransition { content, phase in
+                            // Give recipe cards a fading "roll on/off" effect as they scroll on/off screen
+                            content
+                                .opacity(phase.isIdentity ? 1.0 : 0.25)
+                                .scaleEffect(phase.isIdentity ? 1.0 : 0.8)
+                                .rotation3DEffect(.radians(phase.value), axis: (-1, 0, 0))
+                        }
                 }
             }
         }
