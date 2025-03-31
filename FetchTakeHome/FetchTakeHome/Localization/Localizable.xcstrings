@@ -41,6 +41,16 @@
         }
       }
     },
+    "unable-to-download-recipes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Darn.. Unable to get your recipes - I guess it’s take out tonight."
+          }
+        }
+      }
+    },
     "your-recipes-are-loading" : {
       "localizations" : {
         "en" : {

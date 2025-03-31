@@ -10,12 +10,18 @@ import Foundation
 #if DEBUG
 /// Generates some local mock sample data for previewing and unit tests
 actor NetworkLayerMock: NetworkLayer {
+    static var simulateNetworkError = false
+
     /// Attempt to request data from given endpoint and decode JSON response as given type T
     /// - Parameters:
     ///   - request: The endpoint `URLRequest` object
     ///   - type: The object type to decode as
     /// - Returns: The decoded object if successful. Errors will be thrown if network request or decode fail.
     func fetchJsonData<T: DecodableSendable>(request: URLRequest, type: T.Type) async throws -> T {
+        if NetworkLayerMock.simulateNetworkError {
+            throw URLError(.badServerResponse)
+        }
+
         // Let's determine from url's last path component which sample data to load..
         guard let lastPathComponent = request.url?.lastPathComponent else {
             throw URLError(.badURL)

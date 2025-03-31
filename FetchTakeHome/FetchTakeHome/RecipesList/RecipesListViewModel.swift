@@ -47,6 +47,7 @@ class RecipesListViewModel: ObservableObject {
             self.error = decodingError
             state = .error
         } catch {
+            errorMessageInternal = String(localized: "unable-to-download-recipes")
             self.error = error
             state = .error
         }
