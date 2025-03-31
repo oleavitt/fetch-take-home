@@ -41,4 +41,4 @@ Strings are localized in this project using the newer "xcstrings" system.
 Color assets for light and dark modes have been defined.
 For accessibility, a summary Voice Over read off of each recipe row is performed as the user glides over them.
 If less constrained for time, I would have loved to add a Details screen that shows the larger image file and provides 
-the Youtube link so that the user can tapt and view the recipe video.
+the Youtube link so that the user can tap and view the recipe video.
