@@ -30,6 +30,22 @@ struct RecipesListView: View {
             .task {
                 await viewModel.fetchRecipes()
             }
+            .toolbar {
+                Menu {
+                    Picker("data-source", selection: $viewModel.fetchRecipesEndpoint) {
+                        Text("recipes").tag(Endpoint.recipes)
+                        Text("malformed").tag(Endpoint.malformed)
+                        Text("empty").tag(Endpoint.empty)
+                    }
+                } label: {
+                    Label("data-source", systemImage: "arrow.down.document.fill")
+                }
+            }
+            .onChange(of: viewModel.fetchRecipesEndpoint) {
+                Task {
+                    await viewModel.fetchRecipes()
+                }
+            }
         }
     }
 

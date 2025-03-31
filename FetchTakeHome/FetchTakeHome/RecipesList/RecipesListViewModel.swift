@@ -11,7 +11,7 @@ import Foundation
 class RecipesListViewModel: ObservableObject {
     @Published var state: RecipesListState = .empty
 
-    var fetchRecipesEndpoint: Endpoint = .recipes
+    @Published var fetchRecipesEndpoint: Endpoint = .recipes
 
     /// Get the underlying array of recipes contained within the Recipes response object - if we have it
     var recipes: [Recipe] {
