@@ -9,13 +9,13 @@ An iOS weather app developed using SwiftUI that displays current weather and for
 - SwiftUI
 
 Just build, and run the app in a simulator or on a physical device!
-The dark orange "document down arrow" at the top right lets you pick your test data source.
+The dark orange "document down arrow" icon at the top right lets you pick your test data source.
 
 ## Screenshots
 
-| Main Screen | Main Screen Dark | Data Source |
+| Main Screen (Light) | Main Screen (Dark) | Data Source Picker |
 | -- | -- | -- |
-|  |  |  |
+| ![Main (Light)](https://github.com/user-attachments/assets/ba4a33fe-dc0f-41c1-9155-475ea646cb32) | ![Main (Dark)](https://github.com/user-attachments/assets/5ebdc458-db2a-4101-b7da-74dd69f542a3) | ![Data Source menu](https://github.com/user-attachments/assets/b6145c9b-457d-4fe0-be84-b35c0ebb6d38) |
 
 ## Details
 ### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
